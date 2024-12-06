@@ -1,6 +1,6 @@
 import React from "react";
 import IntroHeader from "./IntroHeader/IntroHeader";
-import IntroContent from "./IntroContent";s
+import IntroContent from "./IntroContent";
 
 const Intro = () => {
   return (

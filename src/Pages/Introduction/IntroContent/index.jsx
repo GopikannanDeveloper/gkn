@@ -2,7 +2,6 @@ import React from "react";
 import About from "./About/About";
 import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
-import Projects from "./Projects/Projects";
 
 const IntroContent = () => {
   return (
