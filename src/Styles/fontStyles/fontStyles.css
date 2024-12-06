@@ -1,0 +1,125 @@
+.f-8 {
+    font-size: 8px;
+}
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-17 {
+    font-size: 17px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-19 {
+    font-size: 19px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-21 {
+    font-size: 21px;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+.f-23 {
+    font-size: 23px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+.f-25 {
+    font-size: 25px;
+}
+
+.f-26 {
+    font-size: 26px;
+}
+
+.f-27 {
+    font-size: 27px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+.f-48{
+    font-size: 48px;
+}
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-1000 {
+    font-weight: 1000;
+}
+
+
+@font-face {
+    font-family:Roboto-Slab;
+    src: url('../../../public/RobotoSlab-VariableFont_wght.ttf');
+}
+
+.Roboto-Slab {
+    font-family: Roboto-Slab;
+  }
+
+*{
+    font-family: Roboto-Slab;
+}
