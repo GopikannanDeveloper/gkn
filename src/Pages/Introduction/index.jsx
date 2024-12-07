@@ -14,10 +14,10 @@ const Intro = () => {
         >
           menu
         </span>
-      <div style={{ height: "25vh" }} className="mb-3" >
+      <div  className="mb-3 intro-header" >
         <IntroHeader />
       </div>
-      <div className="overflow-y-auto" style={{ height: "60vh" }}>
+      <div className="overflow-y-auto intro-content" >
         <IntroContent />
       </div>
     </div>

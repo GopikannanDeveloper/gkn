@@ -3,12 +3,14 @@ import Avatar from "@mui/material/Avatar";
 import gopi from "../../assets/gopi.jpeg";
 import Skills from "./Skills";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MenuItems from "./MenuItems";
+import kirshi from "../../assets/kirshi_logo.svg"
 const Profile = () => {
   const ResidenceDetails = [
-    { id: "1", key: "Phone", value: "+91 99763 14640" },
+    { id: "1", key: "Phone", value: "+91 99763 14640"},
     { id: "4", key: "Age", value: "22" },
   ];
+
+
   return (
     <>
       <div className="card box-shadow">
@@ -32,37 +34,47 @@ const Profile = () => {
                 Sivagangai,TamilNadu
               </span>
             </div>
+            <div className="d-flex gap-1 align-items-center text-center">
+              <img src={kirshi} width="30" height="30"/>
+              <div>
+                <span className="text-grey-color f-12 fw-400" >KIRSHI TECHNOLOGIES AND CONSULTING PRIVATE LIMITED · </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="sidebar-card-body overflow-auto p-2 profile-card-body">
           <div className="d-flex flex-column gap-1">
             <span className="f-12 fw-700 text-white">Email</span>
-            <span className="f-12 fw-400 text-grey-color">
-              gopik.kumaresan@gmail.com
+            <span className="f-12 fw-400 text-grey-color d-flex align-items-center">
+              <span>gopik.kumaresan@gmail.com</span>
             </span>
           </div>
           <div className="divider-line text-black-50"></div>
           {ResidenceDetails.map((item) => (
             <div key={item.id} className="d-flex justify-content-between">
               <span className=" text-white f-12 fw-700">{item.key}</span>
-              <span className="f-12 fw-400 text-grey-color">{item.value}</span>
+              <span className="f-12 fw-400 text-grey-color d-flex align-items-center">
+                {item.value}
+              </span>
             </div>
           ))}
           <div className="divider-line"></div>
           <Skills />
         </div>
         <div className="card-footer">
-          <a
-            className="d-flex align-items-center gap-2"
-            target="_blank"
-            tabIndex="-1"
-            href="https://www.linkedin.com/in/gopikannan-k/"
-          >
-            <LinkedInIcon sx={{ color: "#ffffff" }} />
-            <span className="text-grey-color f-12 fw-400">
-              linkedin.com/in/gopikannan-k/
-            </span>
-          </a>
+          <div className="d-flex align-items-center gap-2">
+            <a
+            className="d-flex align-items-center"
+              target="_blank"
+              tabIndex="-1"
+              href="https://www.linkedin.com/in/gopikannan-k/"
+            >
+              <LinkedInIcon sx={{ color: "#ffffff" }} />
+              <span className="text-grey-color  text-nowrap f-12 fw-400">
+                linkedin.com/in/gopikannan-k/
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </>

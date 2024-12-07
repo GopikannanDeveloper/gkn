@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth !important;
+}
+
 html,
 body {
   margin: 0;
@@ -43,11 +47,7 @@ body {
 
 /* Glassmorphism card effect */
 .intro-header {
-  backdrop-filter: blur(0px) saturate(66%);
-  -webkit-backdrop-filter: blur(0px) saturate(66%);
-  background-color: rgba(255, 255, 255, 0.46);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  height: 30vh !important;
 }
 
 .box-shadow {
@@ -110,7 +110,7 @@ a{
 }
 
 .profile-card-body {
-  height: 50vh;
+  height: 45vh;
 }
 .hello-fnt{
   font-size: 48px;
@@ -126,8 +126,17 @@ font-weight: bold;
   font-size: 16px;
   font-weight: 600;
 }
+.intro-content{
+ height: 55vh;
+}
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
+  .intro-header {
+    height: 14vh !important;
+  }
+  .intro-content{
+    height: 70vh;
+  }
   .profile-card-body {
     height: 60vh;
   }
@@ -147,4 +156,19 @@ font-weight: bold;
     font-size: 16px;
     font-weight: 600;
   }
+}
+
+
+.copy-icon {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out; /* Smooth scaling */
+  color: #959595;
+}
+
+.copy-icon:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+.contact-key{
+  color:rgb(45, 44, 44)
 }
