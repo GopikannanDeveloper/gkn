@@ -1,4 +1,4 @@
-*{
+* {
   scroll-behavior: smooth !important;
 }
 
@@ -21,6 +21,9 @@ body {
 .col-2-5 {
   flex: 0 0 20.833333%; /* Equivalent to 2.5/12 * 100 */
   width: 20.833333%;
+}
+.offcanvas {
+  background-color: #181818;
 }
 
 .card-header {
@@ -89,7 +92,7 @@ body {
   display: none !important;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -100,10 +103,10 @@ a{
   border-radius: 3px;
   border: 1px solid rgba(209, 213, 219, 0.3);
   padding: 10px;
-  color: #959595 ;
+  color: #959595;
 }
 
-.logo-img{
+.logo-img {
   width: 48px !important;
   height: 48px !important;
   background-color: white;
@@ -112,52 +115,51 @@ a{
 .profile-card-body {
   height: 45vh;
 }
-.hello-fnt{
+.hello-fnt {
   font-size: 48px;
   font-weight: 700;
 }
-.fnt-showmore-value{
-font-weight: bold;
-}
-.fnt-showmore-key{
+.fnt-showmore-value {
   font-weight: bold;
 }
-.instituion-fnt{
+.fnt-showmore-key {
+  font-weight: bold;
+}
+.instituion-fnt {
   font-size: 16px;
   font-weight: 600;
 }
-.intro-content{
- height: 55vh;
+.intro-content {
+  height: 55vh;
 }
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .intro-header {
     height: 14vh !important;
   }
-  .intro-content{
+  .intro-content {
     height: 70vh;
   }
   .profile-card-body {
     height: 60vh;
   }
-  .hello-fnt{
+  .hello-fnt {
     font-size: 30px;
     font-weight: 700;
   }
-  .fnt-showmore-value{
+  .fnt-showmore-value {
     font-size: 12px;
     font-weight: 400;
   }
-  .fnt-showmore-key{
+  .fnt-showmore-key {
     font-size: 15px;
     font-weight: 500;
   }
-  .instituion-fnt{
+  .instituion-fnt {
     font-size: 16px;
     font-weight: 600;
   }
 }
-
 
 .copy-icon {
   cursor: pointer;
@@ -169,6 +171,35 @@ font-weight: bold;
 .copy-icon:hover {
   transform: scale(1.2); /* Scale up on hover */
 }
-.contact-key{
-  color:rgb(45, 44, 44)
+.contact-key {
+  color: rgb(45, 44, 44);
+}
+
+
+.btn-close {
+  --bs-btn-close-color: #d1d5db; /* Change the close button color to #d1d5db */
+  --bs-btn-close-opacity: 1; /* Ensure full opacity */
+  --bs-btn-close-hover-opacity: 0.8; /* Slightly reduce opacity on hover */
+  --bs-btn-close-focus-opacity: 1; /* Full opacity when focused */
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: var(--bs-btn-close-color);
+  background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+  border: 0;
+  border-radius: 0.375rem;
+  opacity: var(--bs-btn-close-opacity);
+}
+.btn-close {
+  --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e) !important;
+}
+
+.btn-close:hover {
+  opacity: var(--bs-btn-close-hover-opacity);
+}
+
+.btn-close:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Focus shadow */
+  opacity: var(--bs-btn-close-focus-opacity);
 }

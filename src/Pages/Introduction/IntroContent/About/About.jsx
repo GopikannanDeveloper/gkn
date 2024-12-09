@@ -39,12 +39,16 @@ const About = () => {
         </span>
       </div>
       {!showMore && (
-        <div
-          className="f-12 fw-400 d-flex justify-content-end align-items-end see-more cursor-pointer"
-          onClick={() => setShowMore(true)}
-        >
-          <span class="material-symbols-outlined f-12 fw-400">more_horiz</span>
-          <span>see more</span>
+        <div className="d-flex justify-content-end">
+          <span
+            className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
+            onClick={() => setShowMore(true)}
+          >
+            <span class="material-symbols-outlined f-12 fw-400">
+              more_horiz
+            </span>
+            <span>see more</span>
+          </span>
         </div>
       )}
       {showMore && (

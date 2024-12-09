@@ -50,7 +50,7 @@ const ContactInfo = () => {
           <div className="d-flex flex-column">
             <span className=" contact-key f-16 fw-500">{item.key}</span>
             <span className="f-12 fw-400 text-grey-color d-flex align-items-center">
-              {item.value}
+              <span className="text-muted">{item.value}</span>
               {item.copy && (
                 <span
                   class="material-symbols-outlined ms-1  copy-icon"

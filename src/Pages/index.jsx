@@ -5,7 +5,7 @@ const MainPage = () => {
   return (
     <div>
       <Intro />
-      <div style={{ height: "5vh",zIndex:1000 }}>
+      <div style={{zIndex:1000 }}>
         <IntroFooter />
       </div>
     </div>
