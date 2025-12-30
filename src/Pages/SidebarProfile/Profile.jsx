@@ -3,11 +3,11 @@ import Avatar from "@mui/material/Avatar";
 import gopi from "../../assets/gopi.jpeg";
 import Skills from "./Skills";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import kirshi from "../../assets/kirshi_logo.svg"
+import Hcl from "../../assets/HCLTech.jpeg"
 const Profile = () => {
   const ResidenceDetails = [
     { id: "1", key: "Phone", value: "+91 99763 14640"},
-    { id: "4", key: "Age", value: "22" },
+    { id: "4", key: "Age", value: "23" },
   ];
 
 
@@ -26,7 +26,7 @@ const Profile = () => {
             </div>
             <div className="text-center">
               <span className="text-grey-color">
-                Software Developer | React Developer | 1+ yrs
+                Software Engineer
               </span>
             </div>
             <div className="text-center">
@@ -34,15 +34,15 @@ const Profile = () => {
                 Sivagangai,TamilNadu
               </span>
             </div>
-            <div className="d-flex gap-1 align-items-center text-center">
-              <img src={kirshi} width="30" height="30"/>
+            <div className="d-flex gap-1 align-items-center justify-content-center mt-2">
+              <img src={Hcl} width="30" height="30"/>
               <div>
-                <span className="text-grey-color f-12 fw-400" >KIRSHI TECHNOLOGIES AND CONSULTING PRIVATE LIMITED · </span>
+                <span className="text-grey-color f-12 fw-400" >HCL Technologies . </span>
               </div>
             </div>
           </div>
         </div>
-        <div className="sidebar-card-body overflow-auto p-2 profile-card-body">
+        <div className="sidebar-card-body overflow-auto p-2 profile-card-body" style={{minHeight:"60vh"}}>
           <div className="d-flex flex-column gap-1">
             <span className="f-12 fw-700 text-white">Email</span>
             <span className="f-12 fw-400 text-grey-color d-flex align-items-center">
@@ -59,6 +59,7 @@ const Profile = () => {
             </div>
           ))}
           <div className="divider-line"></div>
+         
           <Skills />
         </div>
         <div className="card-footer">

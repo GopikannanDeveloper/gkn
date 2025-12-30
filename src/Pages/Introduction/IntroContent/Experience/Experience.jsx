@@ -1,21 +1,31 @@
 import React from "react";
 import kirshi from "../../../../assets/kirshi_logo.svg"
+import hcl from "../../../../assets/HCLTech.jpeg"
 import ond from "../../../../assets/ond_logo.jpg"
 const Experience = () => {
   const jobExperience = [
-    {
+     {
       id: "1",
+      position: "Software Engineer",
+      company: "HCL TECHNOLOGIES · ",
+      employmentType: "Full-time",
+      duration: "Feb 2025 - Present",
+      location: "Chennai, Tamil Nadu, India · Hybrid",
+      img: hcl,
+    },
+    {
+      id: "2",
       position: "Junior Software Engineer",
       company: "KIRSHI TECHNOLOGIES AND CONSULTING PRIVATE LIMITED · ",
       employmentType: "Full-time",
-      duration: "Jun 2024 - Present",
+      duration: "Jun 2024 - Jan 2025",
       location: "Chennai, Tamil Nadu, India · Remote",
       img: kirshi,
     },
     {
-      id: "2",
+      id: "3",
       position: "Associate Software Developer",
-      company: "OneData Software Solutions  · ",
+      company: "OneData Software Solutions · ",
       employmentType: "Full-time",
       duration: "Aug 2023 - May 2024",
       location: "Coimbatore, Tamil Nadu, India · On-Site",

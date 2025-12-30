@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const About = () => {
   const [showMore, setShowMore] = useState(false);
   const TechnicalSkills = [
-    { id: "1", key: "Frontend", value: "React" },
+    { id: "1", key: "Frontend", value: "React JS, Angular JS" },
     { id: "2", key: "State Management", value: "Redux, React Query" },
     { id: "3", key: "API Integration", value: "REST APIs" },
     { id: "4", key: "SaaS Development", value: "Responsive Web Applications" },
@@ -22,6 +22,7 @@ const About = () => {
       key: "Programming Languages",
       value: "JavaScript, TypeScript",
     },
+    { id: "13", key: "Database", value: "SQL, MySQL" }
   ];
 
   return (
@@ -31,7 +32,7 @@ const About = () => {
       </div>
       <div>
         <span className="f-13 fw-400">
-          With over 1+ years of experience, I specialize in building scalable,
+          With over 2+ years of experience, I specialize in building scalable,
           responsive applications using modern web technologies. I excel in
           delivering solutions tailored to client needs, ensuring performance
           and usability. Strong in collaboration, problem-solving, and

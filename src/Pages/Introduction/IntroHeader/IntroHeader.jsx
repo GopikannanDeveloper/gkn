@@ -9,7 +9,6 @@ import SwipeableEdgeDrawerHOC from "../../../Components/Drawer";
 const IntroHeader = () => {
   const [show, setShow] = useState(false);
   const { isLaptop } = useWindowSize();
-  console.log(show, "show");
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/projects");
@@ -21,10 +20,10 @@ const IntroHeader = () => {
           Hello, Explore this !
         </span>
         <span className="text-primary-color d-flex align-items-center ">
-          <span>{`<> I am a Software Developer </>`}</span>
+          <span>{`<> I am a Software Engineer </>`}</span>
           <span className="ms-2"> &bull; </span>
           <span className="ms-2 cursor-pointer" onClick={() => setShow(true)}>
-            <u>Contact info</u>{" "}
+            <u>View Contact info</u>{" "}
           </span>
         </span>
       </div>

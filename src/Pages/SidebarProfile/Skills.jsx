@@ -10,9 +10,11 @@ const Skills = () => {
     { id: "5", skill: "Javascript" },
     { id: "6", skill: "Typescript" },
     { id: "7", skill: "React JS" },
+    { id: "13", skill: "Angular JS" },
     { id: "8", skill: "Redux" },
     { id: "9", skill: "React Query" },
     { id: "10", skill: "REST API" },
+    { id: "14", skill: "SQL" },
     { id: "11", skill: "Git" },
     { id: "12", skill: "GitHub" },
   ];
