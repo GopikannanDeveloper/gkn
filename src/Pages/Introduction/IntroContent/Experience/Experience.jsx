@@ -41,7 +41,7 @@ const Experience = () => {
       {jobExperience.map((j) => (
         <div key={j.id} className="d-flex gap-3 mb-3">
           <div>
-            <img src={j.img} alt="img" className="logo-img" />
+            <img  src={j.img} alt="img" className="logo-img rounded" />
           </div>
           <div className="d-flex flex-column">
             <span className="fw-semibold text-primary-color">

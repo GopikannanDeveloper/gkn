@@ -14,7 +14,7 @@ const Intro = () => {
         >
           menu
         </span>
-      <div  className="mb-3 intro-header" >
+      <div  className="intro-header" >
         <IntroHeader />
       </div>
       <div className="overflow-y-auto intro-content" >

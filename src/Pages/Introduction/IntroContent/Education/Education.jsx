@@ -29,7 +29,7 @@ const Education = () => {
         <div key={j.id} className="d-flex gap-2 mb-3">
           <div>
             {j.img ? (
-              <img src={j.img} alt="img" className="logo-img" />
+              <img src={j.img} alt="img" className="logo-img rounded" />
             ) : (
               <Avatar
                 sx={{
@@ -38,7 +38,9 @@ const Education = () => {
                   height: 48,
                   backgroundColor: "white",
                   color: "black",
+                  
                 }}
+                className="rounded"
               >
                 {j.institution.charAt(0).toUpperCase()}
               </Avatar>

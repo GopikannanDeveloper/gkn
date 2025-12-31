@@ -6,13 +6,13 @@ import Education from "./Education/Education";
 const IntroContent = () => {
   return (
     <div>
-      <div className="card-body secondary-box-shadow mt-3">
+      <div className="card-body secondary-box-shadow mt-2">
         <About />
       </div>
       <div className="card-body secondary-box-shadow mt-3">
         <Experience />
       </div>
-      <div className="card-body secondary-box-shadow mt-3">
+      <div className="card-body secondary-box-shadow mt-3 ">
         <Education />
       </div>
     </div>

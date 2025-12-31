@@ -1,10 +1,9 @@
 import React from "react";
 import Profile from "../Pages/SidebarProfile/Profile";
-import IntroFooter from "../Pages/Introduction/IntroFooter/IntroFooter";
 
 const Layout = ({ children }) => {
   return (
-    <div className="container-fluid mt-1">
+    <div className="container-fluid mt-lg-3 mt-2">
       <div className="row gap-2 justify-content-around">
         <div className="col-3 d-lg-block d-none" >
           <Profile />

@@ -4,7 +4,9 @@ import gopi from "../../assets/gopi.jpeg";
 import Skills from "./Skills";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Hcl from "../../assets/HCLTech.jpeg"
+import useWindowSize from "../../Hooks/useWindowSize";
 const Profile = () => {
+    const { isLaptop } = useWindowSize();
   const ResidenceDetails = [
     { id: "1", key: "Phone", value: "+91 99763 14640"},
     { id: "4", key: "Age", value: "23" },
@@ -35,14 +37,14 @@ const Profile = () => {
               </span>
             </div>
             <div className="d-flex gap-1 align-items-center justify-content-center mt-2">
-              <img src={Hcl} width="30" height="30"/>
+              <img className="rounded" src={Hcl} width="30" height="30"/>
               <div>
                 <span className="text-grey-color f-12 fw-400" >HCL Technologies . </span>
               </div>
             </div>
           </div>
         </div>
-        <div className="sidebar-card-body overflow-auto p-2 profile-card-body" style={{minHeight:"60vh"}}>
+        <div className={`sidebar-card-body overflow-auto p-2 ${ isLaptop ? 'profile-card-body' :'profile-mobile-card-body'}`}>
           <div className="d-flex flex-column gap-1">
             <span className="f-12 fw-700 text-white">Email</span>
             <span className="f-12 fw-400 text-grey-color d-flex align-items-center">

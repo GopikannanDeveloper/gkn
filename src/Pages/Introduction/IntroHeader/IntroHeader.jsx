@@ -20,18 +20,21 @@ const IntroHeader = () => {
         <span className="hello-fnt text-primary-color">
           Hello, Explore this !
         </span>
-        <div className="text-primary-color d-flex align-items-center flex-wrap gap-2">
+        <div className="text-primary-color d-flex flex-column flex-lg-row align-items-lg-center align-items-start justify-content-center justify-content-lg-start gap-2">
           <span>{`<> I am a Software Engineer </>`}</span>
 
           <span className="d-lg-inline d-none">&bull;</span>
+          <div className="d-flex gap-1 align-items-center justify-content-center">
+            <span
+              className="cursor-pointer f-14 fw-400 "
+              onClick={() => setShow(true)}
+            >
+              <u>View Contact info</u>
+            </span>
 
-          <span className="cursor-pointer" onClick={() => setShow(true)}>
-            <u>View Contact info</u>
-          </span>
-
-          <span className="d-lg-inline d-none">&bull;</span>
-
-          <ShareProfile />
+            <span className="d-lg-inline d-none">&bull;</span>
+            <ShareProfile />
+          </div>
         </div>
       </div>
       <div className="mt-3 mb-3">

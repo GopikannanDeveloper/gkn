@@ -16,7 +16,7 @@ const About = () => {
       value: "Responsive Design for all screens",
     },
     { id: "9", key: "Deployment", value: "Netlify" },
-    { id: "11", key: "Tools", value: "Vite, Bootstrap, Material-UI" },
+    { id: "11", key: "Tools", value: "Vite, Bootstrap, Tailwind CSS" },
     {
       id: "12",
       key: "Programming Languages",
@@ -66,6 +66,19 @@ const About = () => {
             </ul>
           ))}
         </>
+      )}
+      {showMore && (
+        <div className="d-flex justify-content-end">
+          <span
+            className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
+            onClick={() => setShowMore(false)}
+          >
+            <span class="material-symbols-outlined f-12 fw-400">
+              more_horiz
+            </span>
+            <span>see less</span>
+          </span>
+        </div>
       )}
     </div>
   );

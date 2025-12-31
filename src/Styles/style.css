@@ -49,9 +49,7 @@ body {
 }
 
 /* Glassmorphism card effect */
-.intro-header {
-  height: 30vh !important;
-}
+
 
 .box-shadow {
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 5px rgba(255, 255, 255, 0.5),
@@ -102,7 +100,7 @@ a {
   background-color: rgba(26, 26, 26, 0.85);
   border-radius: 3px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-  padding: 10px;
+  padding: 7px;
   color: #959595;
 }
 
@@ -113,7 +111,7 @@ a {
 }
 
 .profile-card-body {
-  height: 45vh;
+  height: 60vh;
 }
 .hello-fnt {
   font-size: 48px;
@@ -130,19 +128,18 @@ a {
   font-weight: 600;
 }
 .intro-content {
-  height: 55vh;
+  height: 65vh;
 }
+ .profile-mobile-card-body {
+    height: 50vh;
+  }
 /* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-  .intro-header {
-    height: 14vh !important;
-  }
-  .intro-content {
-    height: 70vh;
-  }
-  .profile-card-body {
-    height: 60vh;
-  }
+@media (max-width: 767px)  {
+ 
+ .intro-content {
+  height: 70vh;
+}
+ 
   .hello-fnt {
     font-size: 30px;
     font-weight: 700;
@@ -203,4 +200,12 @@ a {
 .btn-close:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Focus shadow */
   opacity: var(--bs-btn-close-focus-opacity);
+}
+.intro-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #000000; /* or your color */
 }
