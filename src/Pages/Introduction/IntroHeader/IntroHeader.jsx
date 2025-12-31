@@ -5,6 +5,7 @@ import ModalComponent from "../../../Components/ModalComponent";
 import ContactInfo from "./ContactInfo";
 import useWindowSize from "../../../Hooks/useWindowSize";
 import SwipeableEdgeDrawerHOC from "../../../Components/Drawer";
+import ShareProfile from "./ShareProfile";
 
 const IntroHeader = () => {
   const [show, setShow] = useState(false);
@@ -19,17 +20,24 @@ const IntroHeader = () => {
         <span className="hello-fnt text-primary-color">
           Hello, Explore this !
         </span>
-        <span className="text-primary-color d-flex align-items-center ">
+        <div className="text-primary-color d-flex align-items-center flex-wrap gap-2">
           <span>{`<> I am a Software Engineer </>`}</span>
-          <span className="ms-2"> &bull; </span>
-          <span className="ms-2 cursor-pointer" onClick={() => setShow(true)}>
-            <u>View Contact info</u>{" "}
+
+          <span className="d-lg-inline d-none">&bull;</span>
+
+          <span className="cursor-pointer" onClick={() => setShow(true)}>
+            <u>View Contact info</u>
           </span>
-        </span>
+
+          <span className="d-lg-inline d-none">&bull;</span>
+
+          <ShareProfile />
+        </div>
       </div>
       <div className="mt-3 mb-3">
         <ExploreBtn btnLabel="Explore Projects" onClick={handleClick} />
       </div>
+
       {isLaptop ? (
         <ModalComponent
           title="Gopikannan K"
