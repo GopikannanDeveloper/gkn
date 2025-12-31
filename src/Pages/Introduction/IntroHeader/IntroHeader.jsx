@@ -6,6 +6,7 @@ import ContactInfo from "./ContactInfo";
 import useWindowSize from "../../../Hooks/useWindowSize";
 import SwipeableEdgeDrawerHOC from "../../../Components/Drawer";
 import ShareProfile from "./ShareProfile";
+import CTASection from "./CTA/CTA";
 
 const IntroHeader = () => {
   const [show, setShow] = useState(false);
@@ -37,10 +38,22 @@ const IntroHeader = () => {
           </div>
         </div>
       </div>
-      <div className="mt-3 mb-3">
-        <ExploreBtn btnLabel="Explore Projects" onClick={handleClick} />
+      <div className="my-3 d-flex gap-1 flex-column">
+        <span className="text-grey-color">
+          Looking for{" "}
+          <span className="text-primary-color font-bold">
+            React JS / Angular JS{" "}
+          </span>
+          opportunities.
+        </span>
+        <span className="text-grey-color">
+          Let’s build something impactful together.
+        </span>
+        {/* <ExploreBtn btnLabel="Explore Projects" onClick={handleClick} /> */}
       </div>
-
+      <div className="mt-2 mb-3">
+        <CTASection />
+      </div>
       {isLaptop ? (
         <ModalComponent
           title="Gopikannan K"

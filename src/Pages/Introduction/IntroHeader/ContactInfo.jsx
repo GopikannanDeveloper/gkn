@@ -44,7 +44,7 @@ const ContactInfo = () => {
             {item.icon2 ? (
              item.icon2
             ) : (
-              <span class="material-symbols-outlined">{item.icon}</span>
+              <span className="material-symbols-outlined">{item.icon}</span>
             )}
           </div>
           <div className="d-flex flex-column">
@@ -53,7 +53,7 @@ const ContactInfo = () => {
               <span className="text-muted">{item.value}</span>
               {item.copy && (
                 <span
-                  class="material-symbols-outlined ms-1  copy-icon"
+                  className="material-symbols-outlined ms-1  copy-icon"
                   onClick={() => copyToClipboard(item.copyContent)}
                 >
                   content_copy

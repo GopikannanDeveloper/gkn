@@ -48,6 +48,10 @@ body {
   margin-bottom: 10px;
 }
 
+.light-divider-line {
+  border: 0.8px solid #c0bcbc;
+  font-weight: lighter;
+}
 /* Glassmorphism card effect */
 
 
@@ -114,7 +118,7 @@ a {
   height: 60vh;
 }
 .hello-fnt {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
 }
 .fnt-showmore-value {
@@ -128,10 +132,10 @@ a {
   font-weight: 600;
 }
 .intro-content {
-  height: 65vh;
+  height: 60vh;
 }
  .profile-mobile-card-body {
-    height: 50vh;
+    height: 55vh;
   }
 /* Media query for mobile devices */
 @media (max-width: 767px)  {
@@ -141,7 +145,7 @@ a {
 }
  
   .hello-fnt {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
   }
   .fnt-showmore-value {

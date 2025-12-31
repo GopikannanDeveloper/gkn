@@ -45,7 +45,7 @@ const About = () => {
             className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
             onClick={() => setShowMore(true)}
           >
-            <span class="material-symbols-outlined f-12 fw-400">
+            <span className="material-symbols-outlined f-12 fw-400">
               more_horiz
             </span>
             <span>see more</span>
@@ -73,7 +73,7 @@ const About = () => {
             className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
             onClick={() => setShowMore(false)}
           >
-            <span class="material-symbols-outlined f-12 fw-400">
+            <span className="material-symbols-outlined f-12 fw-400">
               more_horiz
             </span>
             <span>see less</span>

@@ -67,7 +67,7 @@ const Projects = () => {
   return (
     <div style={{ height: "90vh", overflowY: "auto" }}>
       <div className="mb-3 d-flex align-items-center gap-2 ms-2 mt-2">
-        <span class="material-symbols-outlined explore-button__icon-wrapper cursor-pointer" onClick={()=>navigate('/home')}>arrow_back</span>
+        <span className="material-symbols-outlined explore-button__icon-wrapper cursor-pointer" onClick={()=>navigate('/home')}>arrow_back</span>
         <span className="f-16 fw-800 text-white ms-2">Projects</span>
       </div>
       {projects.map((j) => (
