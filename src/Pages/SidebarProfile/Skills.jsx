@@ -6,7 +6,7 @@ const Skills = () => {
     { id: "1", skill: "Html" },
     { id: "2", skill: "CSS" },
     { id: "3", skill: "Bootstrap" },
-    { id: "4", skill: "Material UI" },
+    { id: "4", skill: "Tailwind CSS" },
     { id: "5", skill: "Javascript" },
     { id: "6", skill: "Typescript" },
     { id: "7", skill: "React JS" },

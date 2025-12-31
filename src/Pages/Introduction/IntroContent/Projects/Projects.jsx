@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       project: "Hospital Management System",
-      duration: "Oct 2024 - Present",
+      duration: "Oct 2024 - Jan 2025",
       company: "KIRSHI TECHNOLOGIES AND CONSULTING PRIVATE LIMITED",
       About: `
         Admin Module: Manages hospital operations, staff, departments, patient records, and system settings with robust reporting tools.
