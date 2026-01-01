@@ -1,31 +1,33 @@
 import { useEffect, useState } from "react";
 
+let deferredPromptGlobal = null; // store globally
+
 export const usePWAInstall = () => {
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isInstallable, setIsInstallable] = useState(false);
 
   useEffect(() => {
     const handler = (e) => {
       e.preventDefault();
-      setDeferredPrompt(e);
+      deferredPromptGlobal = e; // save globally
       setIsInstallable(true);
     };
 
     window.addEventListener("beforeinstallprompt", handler);
 
-    return () => {
-      window.removeEventListener("beforeinstallprompt", handler);
-    };
+    return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
   const installApp = async () => {
-    if (!deferredPrompt) return;
+    if (!deferredPromptGlobal) {
+      console.log("No deferred prompt available");
+      return;
+    }
 
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
+    deferredPromptGlobal.prompt();
+    const { outcome } = await deferredPromptGlobal.userChoice;
     console.log("Install outcome:", outcome);
 
-    setDeferredPrompt(null);
+    deferredPromptGlobal = null;
     setIsInstallable(false);
   };
 
