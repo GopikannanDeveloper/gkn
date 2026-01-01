@@ -39,14 +39,14 @@ const IntroHeader = () => {
         </div>
       </div>
       <div className="my-3 d-flex gap-1 flex-column">
-        <span className="text-grey-color">
+        <span className="f-14 fw-400 text-grey-color">
           Looking for{" "}
-          <span className="text-primary-color font-bold">
+          <span className="f-16 fw-400  text-primary-color font-bold">
             React JS / Angular JS{" "}
           </span>
           opportunities.
         </span>
-        <span className="text-grey-color">
+        <span className="text-grey-color f-14 fw-400">
           Let’s build something impactful together.
         </span>
         {/* <ExploreBtn btnLabel="Explore Projects" onClick={handleClick} /> */}

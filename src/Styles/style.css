@@ -363,3 +363,49 @@ a {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.pwa-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.pwa-banner img {
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.pwa-banner-text {
+  flex: 1;
+}
+
+.pwa-banner-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.install-btn {
+  background: #3f7add;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ddd;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
