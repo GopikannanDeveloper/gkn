@@ -16,7 +16,7 @@ const InstallButton = () => {
   return (
     <div className="install-modal-backdrop">
       <div className="install-modal">
-        <h2>Install Our App</h2>
+        <h2>Install My Portfolio App</h2>
         <p>
           Install this app for a faster, offline-friendly experience!
         </p>
