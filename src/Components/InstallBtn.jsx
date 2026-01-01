@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/style.css";
 import { usePWAInstall } from "../Hooks/usePWAInstall";
 const InstallButton = () => {
