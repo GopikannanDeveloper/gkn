@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import tc from "../../../../assets/tc_logo.jpg";
 import { Avatar } from "@mui/material";
 const Education = () => {
+  const [imgError, setImgError] = useState(false);
   const education = [
     {
       id: "1",
@@ -28,8 +29,8 @@ const Education = () => {
       {education.map((j) => (
         <div key={j.id} className="d-flex gap-2 mb-3">
           <div>
-            {j.img ? (
-              <img src={j.img} alt="img" className="logo-img rounded" />
+                  {j.img  && !imgError ? (
+              <img src={j.img} alt="img" className="logo-img rounded" onError={() => setImgError(true)}/>
             ) : (
               <Avatar
                 sx={{

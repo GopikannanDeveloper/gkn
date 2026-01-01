@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import kirshi from "../../../../assets/kirshi_logo.svg";
 import ond from "../../../../assets/ond_logo.jpg";
 import hcl from "../../../../assets/HCLTech.jpeg";
 import { useNavigate } from "react-router-dom";
+import { Avatar } from "@mui/material";
 const Projects = () => {
-    const navigate = useNavigate()
+  const [imgError, setImgError] = useState(false);
+  const navigate = useNavigate();
   const projects = [
     {
-      project: "Becton Dickinson BD (Becton, Dickinson and Company) - Medical Product",
+      project:
+        "Becton Dickinson BD (Becton, Dickinson and Company) - Medical Product",
       duration: "Feb 2025 - Present",
       company: "HCL TECHNOLOGIES",
       About: `
@@ -67,7 +70,12 @@ const Projects = () => {
   return (
     <div style={{ height: "90vh", overflowY: "auto" }}>
       <div className="mb-3 d-flex align-items-center gap-2 ms-2 mt-2">
-        <span className="material-symbols-outlined explore-button__icon-wrapper cursor-pointer" onClick={()=>navigate('/home')}>arrow_back</span>
+        <span
+          className="material-symbols-outlined explore-button__icon-wrapper cursor-pointer"
+          onClick={() => navigate("/home")}
+        >
+          arrow_back
+        </span>
         <span className="f-16 fw-800 text-white ms-2">Projects</span>
       </div>
       {projects.map((j) => (
@@ -80,13 +88,36 @@ const Projects = () => {
             </span>
             <span className="fw-400 f-14 text-grey-color">{j.duration}</span>
             <span className="fw-300 f-12 text-grey-color mt-3">
-              <img
-                src={j.img}
-                width="30"
-                height="30"
-                style={{ backgroundColor: "white" }}
-              />{" "}
-              with {j.company}
+              {j.img && !imgError ? (
+                <div className="d-flex align-items-center gap-2">
+                  <img
+                    width="30"
+                    height="30"
+                    src={j.img}
+                    alt="img"
+                    className="logo-img rounded"
+                    style={{ backgroundColor: "white" }}
+                    onError={() => setImgError(true)}
+                  />
+                  <span>with {j.company}</span>
+                </div>
+              ) : (
+                <div className="d-flex align-items-center gap-2">
+                  <Avatar
+                    sx={{
+                      borderRadius: 0,
+                      width: 48,
+                      height: 48,
+                      backgroundColor: "white",
+                      color: "black",
+                    }}
+                    className="rounded"
+                  >
+                    {j.company.charAt(0).toUpperCase()}
+                  </Avatar>
+                  <span>with {j.company}</span>
+                </div>
+              )}
             </span>
             {/* <span className="fw-300 f-12 text-grey-color mt-3">{j.About}</span> */}
           </div>

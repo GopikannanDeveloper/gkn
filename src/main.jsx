@@ -6,7 +6,8 @@ import "./Styles/style.css"
 import "./Styles/fontStyles/fontStyles.css"
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Toaster } from 'react-hot-toast';
-
+import { registerSW } from 'virtual:pwa-register';
+registerSW({ immediate: true });
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

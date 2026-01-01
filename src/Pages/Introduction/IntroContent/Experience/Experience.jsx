@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import kirshi from "../../../../assets/kirshi_logo.svg"
 import hcl from "../../../../assets/HCLTech.jpeg"
 import ond from "../../../../assets/ond_logo.jpg"
+import { Avatar } from "@mui/material";
 const Experience = () => {
+  const [imgError, setImgError] = useState(false);
   const jobExperience = [
      {
       id: "1",
@@ -41,7 +43,23 @@ const Experience = () => {
       {jobExperience.map((j) => (
         <div key={j.id} className="d-flex gap-3 mb-3">
           <div>
-            <img  src={j.img} alt="img" className="logo-img rounded" />
+            {j.img  && !imgError ? (
+            <img  src={j.img} alt="img" className="logo-img rounded" onError={() => setImgError(true)} />
+            ) : (
+              <Avatar
+                sx={{
+                  borderRadius: 0,
+                  width: 48,
+                  height: 48,
+                  backgroundColor: "white",
+                  color: "black",
+                  
+                }}
+                className="rounded"
+              >
+                {j.company.charAt(0).toUpperCase()}
+              </Avatar>
+            )}
           </div>
           <div className="d-flex flex-column">
             <span className="fw-semibold text-primary-color">

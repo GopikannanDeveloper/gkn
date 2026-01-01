@@ -1,13 +1,11 @@
 import React from "react";
 import ExploreBtn from "../../../../Components/ExploreBtn";
-import resume from '../../../../../public/resume.pdf'
+import resume from '../../../../assets/resume.pdf'
 const CTASection = () => {
-  const handleResumeClick = () => {
-    window.open(
-      resume,
-      "_blank"
-    );
-  };
+ const handleResumeClick = () => {
+  window.open(resume, "_blank");
+};
+
   const handleLinkedInClick = () => {
     window.open("https://www.linkedin.com/in/gopikannan-k/", "_blank");
   };

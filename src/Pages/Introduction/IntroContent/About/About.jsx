@@ -31,7 +31,7 @@ const About = () => {
         <span className="f-16 fw-800 text-white">About</span>
       </div>
       <div>
-        <span className="f-13 fw-400">
+        <span className="f-13 fw-400 text-grey-color">
           With over 2+ years of experience, I specialize in building scalable,
           responsive applications using modern web technologies. I excel in
           delivering solutions tailored to client needs, ensuring performance
@@ -45,10 +45,10 @@ const About = () => {
             className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
             onClick={() => setShowMore(true)}
           >
-            <span className="material-symbols-outlined f-12 fw-400">
+            <span className="material-symbols-outlined f-12 fw-400 text-grey-color">
               more_horiz
             </span>
-            <span>see more</span>
+            <span className="text-grey-color">see more</span>
           </span>
         </div>
       )}
@@ -57,7 +57,7 @@ const About = () => {
           {TechnicalSkills.map((item) => (
             <ul key={item.id}>
               <li>
-                <div className="d-flex flex-lg-row flex-column gap-2 mt-2 ">
+                <div className="d-flex flex-lg-row flex-column gap-2 mt-2 text-grey-color ">
                   <span className="fnt-showmore-key">{item.key}</span>
                   <span className="d-lg-block d-none">{":"}</span>
                   <span className="fnt-showmore-value">{item.value}</span>
@@ -73,10 +73,10 @@ const About = () => {
             className="f-12 fw-400  see-more cursor-pointer d-flex  align-items-end "
             onClick={() => setShowMore(false)}
           >
-            <span className="material-symbols-outlined f-12 fw-400">
+            <span className="material-symbols-outlined f-12 fw-400 text-grey-color">
               more_horiz
             </span>
-            <span>see less</span>
+            <span className="text-grey-color">see less</span>
           </span>
         </div>
       )}

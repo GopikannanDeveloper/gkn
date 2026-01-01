@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import kirshi from "../../../../assets/kirshi_logo.svg";
 import hcl from "../../../../assets/HCLTech.jpeg";
 import ExploreBtn from "../../../../Components/ExploreBtn";
+import { Avatar } from "@mui/material";
 const DraftProjects = () => {
   const navigate = useNavigate();
+  const [imgError, setImgError] = useState(false);
   const onClick = () => navigate("/projects");
   const location = useLocation();
   const isProjectsPage = location.pathname === "/projects";
@@ -54,13 +56,36 @@ const DraftProjects = () => {
               </span>
               <span className="fw-400 f-14 text-grey-color">{j.duration}</span>
               <span className="fw-300 f-12 text-grey-color mt-3">
-                <img
-                  src={j.img}
-                  width="30"
-                  height="30"
-                  style={{ backgroundColor: "white" }}
-                />{" "}
-                with {j.company}
+                {j.img && !imgError ? (
+                <div className="d-flex align-items-center gap-2">
+                  <img
+                    width="30"
+                    height="30"
+                    src={j.img}
+                    alt="img"
+                    className="logo-img rounded"
+                    style={{ backgroundColor: "white" }}
+                    onError={() => setImgError(true)}
+                  />
+                  <span>with {j.company}</span>
+                </div>
+              ) : (
+                <div className="d-flex align-items-center gap-2">
+                  <Avatar
+                    sx={{
+                      borderRadius: 0,
+                      width: 48,
+                      height: 48,
+                      backgroundColor: "white",
+                      color: "black",
+                    }}
+                    className="rounded"
+                  >
+                    {j.company.charAt(0).toUpperCase()}
+                  </Avatar>
+                  <span>with {j.company}</span>
+                </div>
+              )}
               </span>
               {/* <span className="fw-300 f-12 text-grey-color mt-3">{j.About}</span> */}
             </div>

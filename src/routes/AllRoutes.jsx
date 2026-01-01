@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import MainPage from "../Pages";
 import Projects from "../Pages/Introduction/IntroContent/Projects/Projects";
+import ResumeRoute from "../Pages/Introduction/IntroHeader/CTA/ResumeRoute";
 
 const AllRoutes = () => {
   return (
@@ -16,6 +17,8 @@ const AllRoutes = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<MainPage />} />
+          {/* <Route path="/resume" element={<ResumeRoute/>} /> */}
+
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Navigate to="/home" replace />}/>
         </Routes>
