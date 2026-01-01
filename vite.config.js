@@ -30,9 +30,15 @@ export default defineConfig({
         start_url: "/",
         icons: [
           {
-            purpose: "maskable",
-            sizes: "48x48",
-            src: "maskable_icon_x48.png",
+            purpose: "any",
+            sizes: "192x192",
+            src: "gopi-512-512.png",
+            type: "image/png",
+          },
+          {
+            purpose: "any",
+            src: "gopi-512-512.png",
+            sizes: "512x512",
             type: "image/png",
           },
           {
@@ -43,7 +49,7 @@ export default defineConfig({
           },
           {
             purpose: "maskable",
-            src: "maskable_icon_x384.png",
+            src: "gopi-512-512.png",
             sizes: "512x512",
             type: "image/png",
           },
